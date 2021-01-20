@@ -14,7 +14,7 @@ for(let i = 1; i <= 200; i++){
         Other.push(i); 
     } 
 } 
-console.log(`Total Number of Fizz = ${Fizz.length}`); 
-console.log(`Total Number of Fizz = ${Buzz.length}`);
-console.log(`Total Number of Fizz = ${FizzBuzz.length}`);
-console.log(`Total Number of Fizz = ${Other.length}`); 
+console.log(`Total Number of Fizz = ${Fizz.length}`); //Total Number of Fizz = 53
+console.log(`Total Number of Fizz = ${Buzz.length}`); //Total Number of Buzz = 27
+console.log(`Total Number of Fizz = ${FizzBuzz.length}`); //Total Number of FizzBuzz = 13
+console.log(`Total Number of Fizz = ${Other.length}`); //Total Number of Other = 107
