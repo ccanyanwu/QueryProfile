@@ -50,7 +50,7 @@ pool.query(
     ADDRESS TEXT NOT NULL,
     CITY TEXT NOT NULL,
     STATE TEXT NOT NULL,
-    COUNTRY TEXT NOT NULL)`, 
+    COUNTRY TEXT NOT NULL )`, 
   (err, res) => {
       if(err) {
         console.log('Error or issue with table creation');

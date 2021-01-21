@@ -47,7 +47,7 @@ pool.query(
                  ('4', 'Jones', 'Stones', 'stonyJ@gmail.com', 'St80on$' , '14104972886', 'Chilli Tech', '474961', 'Professional Services',
                  'Manager', '100', '1985-04-24', 'English', '3 Memorial Drive', 'Baltimore', 'Maryland', 'USA' ),
                  ('5', 'Mellisa', 'Ugrey', 'mellisag@outlook.com', 'me!ine45' , '16472244387', 'Mety Health', '96911', 'Health Care',
-                 'Director', '120', '1993-03-29', 'English', '7 South Clay Drive', 'Ontario', 'First Fruness', 'Canada' )
+                 'Director', '120', '1993-03-29', 'English', '7 South Clay Drive', 'Ontario', 'First Fruness', 'Canada')
                  `,
     (err, res) => {
       if(err) {
