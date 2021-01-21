@@ -35,21 +35,24 @@ pool.connect((err, client, done) => {
 
 // insert a record into our table
 pool.query(
-    `INSERT INTO TeamChukwuemeka2021 
-                 (ID, NAME, AGE, DEPARTMENT, ROLE, STATUS, CREATEED_DT)
+    `INSERT INTO UserChukwuemeka2021 
+                 ( ID, FIRSTNAME, LASTNAME, EMAIL, PASSWORD, MOBILE_NUMBER, COMPANY_NAME, COMPANY_ZIP_CODE, INDUSTRY, POSITION, SALARY, DATE_OF_BIRTH, LANGUAGE, ADDRESS, CITY, STATE, COUNTRY)
                  VALUES 
-                 ('1', 'Sarah', 5, 'Accounting', 'PM' , 'Activated', '01-01-2020'),
-                 ('2', 'Tim', 10, 'Engineering', 'QA' , 'Pending', '02-01-2020'),
-                 ('3', 'Joe', 17, 'Management', 'PM' , 'Activated', '02-01-2020'),
-                 ('4', 'Tolu', 25, 'Management', 'Dev' , 'Pending', '02-01-2020'),
-                 ('5', 'Rob', 5, 'Engineering', 'QA' , 'Activated', '03-01-2020'),
-                 ('6', 'Ade', 10, 'Management', 'QA' , 'Pending', '04-01-2020'),
-                 ('7', 'Tom', 17, 'Security', 'QA' , 'Activated', '05-01-2020'),
-                 ('2', 'Jide', 26, 'Accounting', 'Dev' , 'Activated', '06-01-2020')
+                 ('1', 'Emeka', 'Anyanwu', 'eme42c@gmail.com', 'Cemeka5%' , '07033548895', 'Thrive Consults', '38501', 'Professional Services',
+                 'Manager', '80', '1994-04-04', 'English', '16 Grey Street', 'Warri', 'Delta', 'Nigeria' ),
+                 ('2', 'Shola', 'Tope', 'sholdzy@gmail.com', 'Sgt5%y7t' , '07035214480', 'Kooban', '32234', 'Fitness/Beauty',
+                 'Driver', '25', '1990-06-14', 'Yoruba', '20 Fade Street', 'Ikeja', 'Lagos', 'Nigeria' ),
+                 ('3', 'Musa', 'Yahib', 'myahib@yahoo.com', '3#rew782' , '08181080315', 'Fairness Group', '22347', 'Professional Care',
+                 'Cashier', '30', '1996-12-23', 'Hausa', '3 Zungairu Street', 'Kano', 'Kano', 'Nigeria' ),
+                 ('4', 'Jones', 'Stones', 'stonyJ@gmail.com', 'St80on$' , '14104972886', 'Chilli Tech', '474961', 'Professional Services',
+                 'Manager', '100', '1985-04-24', 'English', '3 Memorial Drive', 'Baltimore', 'Maryland', 'USA' ),
+                 ('5', 'Mellisa', 'Ugrey', 'mellisag@outlook.com', 'me!ine45' , '16472244387', 'Mety Health', '96911', 'Health Care',
+                 'Director', '120', '1993-03-29', 'English', '7 South Clay Drive', 'Ontario', 'First Fruness', 'Canada' )
                  `,
     (err, res) => {
       if(err) {
         console.log('Error or issue with table creation');
+        console.log(err);
     } else {
         console.log('Inserted data into table successfully')
         console.log(res);
